@@ -26,7 +26,7 @@ container.addEventListener('click', onClick);
 function onClick(event) {
     event.preventDefault();
     const target = event.target;
-    if (!target.classList.contains('gallery__link')) { 
+    if (!target.classList.contains('gallery__image')) { 
         return;
     }
       const instance = basicLightbox.create(`
@@ -41,7 +41,7 @@ function onClick(event) {
         }
 
     })   
-};
+}
 
 
 
