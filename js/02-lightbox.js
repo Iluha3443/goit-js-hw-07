@@ -15,9 +15,9 @@ container.insertAdjacentHTML('beforeend', markupGallery.join(""));
 container.addEventListener('click', onClick);
 
 const galleryList = new SimpleLightbox('.gallery a',{
-  captionType: 'alt', 
+   captionsData: 'alt',   
+   captionDelay: 250,
 });
 
 function onClick(event) {
-   
 };
