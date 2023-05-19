@@ -12,12 +12,10 @@ const markupGallery = galleryItems.map(({ preview, original, description }) => `
 </li>`);
 
 container.insertAdjacentHTML('beforeend', markupGallery.join(""));
-container.addEventListener('click', onClick);
+
 
 const galleryList = new SimpleLightbox('.gallery a',{
    captionsData: 'alt',   
    captionDelay: 250,
 });
 
-function onClick(event) {
-};
